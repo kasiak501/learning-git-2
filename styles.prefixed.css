@@ -2,9 +2,12 @@ body {
 background-color: blanchedalmond
 }
 .jambotron {
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-ms-flex-align: center;
+	    align-items: center;
+	-ms-flex-pack: center;
+	    justify-content: center;
 	text-transform: uppercase;
 	height: 75vh;
 	background: #162955;
