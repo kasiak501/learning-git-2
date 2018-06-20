@@ -25,8 +25,8 @@
     "build:sass": "node-sass --output-style compact -o css sass",
     "buil:autoprefixer": "autoprefixer-cli -d css",
     "build:sassprefixer": "npm run build:sass && npm run build:autoprefixer",
-    "watch:sassprefixer": "globstar onchange css/style.css -- run build:sassprefixer",
-    "init-project": "npm-run-all init:*",
+    "watch:sassprefixer": "globstar onchange css/style.css -- npm run build:sassprefixer",
+    "init-project": "npm install && npm-run-all init:*",
     "init:dirs": "mkdirp sass css vendor images js",
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore"
